@@ -7,6 +7,10 @@
 
         <li>
 <%= message %>
+<%= form_for(@user) do |f| %>
+
+      
+<%= render 'layouts/error_messages', model: f.object %>
 </li>
       
 <% end %>
