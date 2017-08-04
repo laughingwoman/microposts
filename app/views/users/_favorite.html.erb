@@ -1,0 +1,7 @@
+
+
+<%= form_for(current_user.favorites_microposts.build, remote: true) do |f| %>
+<%= f.submit "favorite", class: "btn btn-primary" %>
+<% end %>
+
+

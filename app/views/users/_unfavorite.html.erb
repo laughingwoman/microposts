@@ -1,0 +1,8 @@
+
+
+<%= form_for(current_user.unfavorites_microposts.build.find_by(micropost_id: params[:@micropost_id]),
+             html: { method: :delete },
+             remote: true) do |f| %>
+
+<%= f.submit "unfavorite", class: "btn" %>
+<% end %>
